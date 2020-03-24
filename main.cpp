@@ -7,12 +7,12 @@ using namespace std;
 
 string stringSort(string s){
 	
-	int t[256]; //dane wejsciowe
-	string wynik;
+    int t[256]; //dane wejsciowe
+        string wynik;
 	
-	//przypisanie kazdej komurce wartosci
-	for (int i=0; i<=256; i++)
-        t[i]=0;
+    //przypisanie kazdej komurce wartosci
+    for (int i=0; i<=256; i++)
+       	   t[i]=0;
 
     //zapelnienie tablicy t[i] danymi
     for (int i=0; i<=s.length()-1; i++)
@@ -53,7 +53,7 @@ string stringSort(string s){
 
 int main(int argc, char** argv) {
 	
-	cout<<stringSort("bekaZTegoProgramu");//brak czasu na zmiane duzych liter na male 
+	cout<<stringSort("lol");//brak czasu na zmiane duzych liter na male 
 	
 	return 0;
 }
