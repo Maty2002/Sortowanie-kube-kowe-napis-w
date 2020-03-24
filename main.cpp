@@ -16,11 +16,7 @@ string stringSort(string s){
 
     //zapelnienie tablicy t[i] danymi
     for (int i=0; i<=s.length()-1; i++)
-    {
         t[i]=(int)s[i];
-    }
-
-    cout<<"Tablica zostala zapelniona.."<<endl<<endl;
 
     int l[256]; //licznik
 
@@ -29,20 +25,18 @@ string stringSort(string s){
         l[i]=0;
 
     //podliczenie wynikow
-    for (int i=0; i<=255; i++){
+    for (int i=0; i<=255; i++)
     	l[t[i]]++;
-    	cout<<t[i]<<endl;
-
-	}
 
     //przypisanie uporzadkowanych wynikow
-    for (int i=0; i<=255; i++)
-    {
-        if (l[i]>0)
-           for (int j=1; j<=l[i]; j++)
-           		if(i>0)
-               		wynik+=(char)i;
-            }
+    for (int i=0; i<=255; i++){
+        if (l[i]>0){
+           for (int j=1; j<=l[i]; j++){
+           	if(i>0)
+               	    wynik+=(char)i;
+	   }
+        }
+    }
 	
 	
 	return wynik;
